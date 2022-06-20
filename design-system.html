@@ -131,11 +131,32 @@
           </div>
         </div>
       </section>
+
       <section class="flow" id="interactive-elements">
         <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
 
         <!-- navigation -->
-        <div></div>
+        <div>
+          <nav>
+            <ul class="primary-navigation underline-indicators flex">
+              <li class="active">
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>01</span>Active</a
+                >
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>02</span>Hovered</a
+                >
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>03</span>Idle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="flex">
           <div style="margin-top: 5rem">
@@ -147,12 +168,57 @@
             >
           </div>
 
-          <div style="margin: 50vh">
+          <div class="flow" style="--flow-space: 4rem">
             <!-- Tabs -->
+            <div class="tab-list underline-indicators flex">
+              <button
+                aria-selected="true"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Moon
+              </button>
+              <button
+                aria-selected="false"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Mars
+              </button>
+              <button
+                aria-selected="false"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Europa
+              </button>
+            </div>
 
             <!-- Dots -->
+            <div class="dot-indicators flex">
+              <button aria-selected="true">
+                <span class="sr-only">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Slide title</span>
+              </button>
+            </div>
 
             <!-- Numbers -->
+            <div
+              class="number-indicators flex"
+              style="flex-direction: column; align-items: center"
+            >
+              <button class="uppercase ff-serif fs-600" aria-selected="true">
+                1
+              </button>
+              <button class="uppercase ff-serif fs-600" aria-selected="false">
+                2
+              </button>
+              <button class="uppercase ff-serif fs-600" aria-selected="false">
+                3
+              </button>
+            </div>
           </div>
         </div>
       </section>
